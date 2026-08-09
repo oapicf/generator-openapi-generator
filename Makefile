@@ -30,7 +30,7 @@ test-oag-file-spec:
 		--author_url "https://github.com/pakkunbot" \
 		--github_id "pakkunbot" \
 		--github_repo "oag-file-spec" \
-		--github_token_prefix "STUDIO"
+		--github_token_prefix "OAPICF"
 	cd stage/oag-file-spec/ && CUSTOM=true make init-generators-config ci
 
 test-oag-file-spec-local:
@@ -43,7 +43,7 @@ test-oag-file-spec-local:
 		--author_url "https://github.com/pakkunbot" \
 		--github_id "pakkunbot" \
 		--github_repo "oag-file-spec" \
-		--github_token_prefix "STUDIO"
+		--github_token_prefix "OAPICF"
 	cd stage/oag-file-spec/ && LOCAL=true make init-generators-config ci
 
 ########################################
@@ -66,7 +66,7 @@ test-oag-file-spec-partials:
 		--author_url "https://github.com/pakkunbot" \
 		--github_id "pakkunbot" \
 		--github_repo "oag-file-spec" \
-		--github_token_prefix "STUDIO"
+		--github_token_prefix "OAPICF"
 
 ########################################
 # oag-url-spec targets
@@ -88,7 +88,7 @@ test-oag-url-spec:
 		--author_url "https://github.com/pakkunbot" \
 		--github_id "pakkunbot" \
 		--github_repo "oag-url-spec" \
-		--github_token_prefix "STUDIO"
+		--github_token_prefix "OAPICF"
 	cd stage/oag-url-spec/ && CUSTOM=true make init-generators-config ci
 
 test-oag-url-spec-local:
@@ -101,7 +101,7 @@ test-oag-url-spec-local:
 		--author_url "https://github.com/pakkunbot" \
 		--github_id "pakkunbot" \
 		--github_repo "oag-url-spec" \
-		--github_token_prefix "STUDIO"
+		--github_token_prefix "OAPICF"
 	cd stage/oag-url-spec/ && LOCAL=true make init-generators-config ci
 
 ########################################
@@ -124,7 +124,7 @@ test-oag-url-spec-partials:
 		--author_url "https://github.com/pakkunbot" \
 		--github_id "pakkunbot" \
 		--github_repo "oag-url-spec" \
-		--github_token_prefix "STUDIO"
+		--github_token_prefix "OAPICF"
 
 update-swaggy-c-to-latest:
 	cd templates/oag-file-spec && make update-to-latest
