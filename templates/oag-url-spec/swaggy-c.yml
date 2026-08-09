@@ -1,4 +1,4 @@
-spec_uri: https://raw.githubusercontent.com/cliffano/swaggy-c/main/examples/file-spec/specification/google.yml
+spec_uri: https://raw.githubusercontent.com/cliffano/swaggy-c/main/examples/oag-file-spec/specification/google.yml
 version: {{initVersion}}
 contact:
   name: {{project_name}}
