@@ -23,11 +23,15 @@ Usage
 
 Generate OAG with file specification project:
 
-    make generate-oag-file-spec
+```shell
+make generate-oag-file-spec
+```
 
 Generate OAG with URL specification project:
 
-    make generate-oag-url-spec
+```shell
+make generate-oag-url-spec
+```
 
 Both components will prompt you the following inputs:
 
@@ -43,11 +47,15 @@ Both components will prompt you the following inputs:
 
 Move to the generated project directory:
 
-    cd stage/<component>/
+```shell
+cd stage/<component>/
+```
 
 Initial configuration file for each OAG language:
 
-    make init-generators-config
+```shell
+make init-generators-config
+```
 
 For the primary languages, modify the configuration file to include the following:
 
@@ -55,39 +63,45 @@ For the primary languages, modify the configuration file to include the followin
 
 ### Javascript
 
-    {
-      "projectName": "<project_id>",
-      "packageName": "<project_id>",
-      "packageVersion": "<version>",
-      "gitUserId": "<github_id>",
-      "gitRepoId": "<project_id>"
-    }
+```json
+{
+  "projectName": "<project_id>",
+  "packageName": "<project_id>",
+  "packageVersion": "<version>",
+  "gitUserId": "<github_id>",
+  "gitRepoId": "<project_id>"
+}
+```
 
 ### Python
 
-    {
-      "projectName": "<project_id>",
-      "packageName": "<project_id>",
-      "packageVersion": "<version>",
-      "packageUrl": "https://github.com/<github_id>/<project_id>",
-      "gitUserId": "<github_id>",
-      "gitRepoId": "<project_id>"
-    }
+```json
+{
+  "projectName": "<project_id>",
+  "packageName": "<project_id>",
+  "packageVersion": "<version>",
+  "packageUrl": "https://github.com/<github_id>/<project_id>",
+  "gitUserId": "<github_id>",
+  "gitRepoId": "<project_id>"
+}
+```
 
 ### Ruby
 
-    {
-      "gemName": "<project_id>",
-      "moduleName": "<ProjectId>",
-      "gemVersion": "<version>",
-      "gemAuthor": "<author_name>",
-      "gemAuthorEmail": "<author_email>",
-      "gemHomepage": "https://github.com/oapicf/<project_id>",
-      "gemLicense": "MIT",
-      "gemRequiredRubyVersion": ">= 3.0",
-      "gitUserId": "<github_id>",
-      "gitRepoId": "<project_id>"
-    }
+```json
+{
+  "gemName": "<project_id>",
+  "moduleName": "<ProjectId>",
+  "gemVersion": "<version>",
+  "gemAuthor": "<author_name>",
+  "gemAuthorEmail": "<author_email>",
+  "gemHomepage": "https://github.com/oapicf/<project_id>",
+  "gemLicense": "MIT",
+  "gemRequiredRubyVersion": ">= 3.0",
+  "gitUserId": "<github_id>",
+  "gitRepoId": "<project_id>"
+}
+```
 
 Colophon
 --------
