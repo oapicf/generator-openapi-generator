@@ -1,6 +1,12 @@
-<img align="right" src="https://raw.github.com/{{github_id}}/{{project_id}}/main/avatar.jpg" alt="Avatar"/>
+<!-- BEGIN:AVATAR -->
+To be populated by generator-openapi-generator oag-file-spec-partials
+<!-- END:AVATAR -->
 
-[![Build Status](https://github.com/{{github_id}}/{{project_id}}/actions/workflows/ci-workflow.yaml/badge.svg)](https://github.com/{{github_id}}/{{project_id}}/actions/workflows/ci-workflow.yaml)
+<!-- BEGIN:BADGES -->
+To be populated by generator-openapi-generator oag-file-spec-partials
+<!-- END:BADGES -->
+
+[[![Build Status](https://github.com/{{github_id}}/{{project_id}}/actions/workflows/ci-workflow.yaml/badge.svg)](https://github.com/{{github_id}}/{{project_id}}/actions/workflows/ci-workflow.yaml)
 <br/>
 
 {{project_name}}
@@ -33,17 +39,27 @@ Or you can use the published packages like below:
 
 Install JavaScript client:
 
-    npm install {{javascriptPkgName project_name}}
+```shell
+npm install {{javascriptPkgName project_name}}
+```
 
 Install Python client:
 
-    pip install {{pythonPkgName project_name}}
+```text
+pip install {{pythonPkgName project_name}}
+```
 
 Install Ruby client:
 
-    gem install {{rubyPkgName project_name}}
+```text
+gem install {{rubyPkgName project_name}}
+```
 
 Colophon
 --------
+
+<!-- BEGIN:BUILD_REPORTS -->
+To be populated by generator-openapi-generator oag-file-spec-partials
+<!-- END:BUILD_REPORTS -->
 
 * [API Documentation](https://{{github_id}}.github.io/{{project_id}}/api/latest/)

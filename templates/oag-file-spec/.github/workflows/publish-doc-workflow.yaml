@@ -7,11 +7,11 @@ jobs:
   build:
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
         with:
           token: $\{{ secrets.OAPICF_GITHUB_TOKEN }}
           ref: main
-      - uses: actions/setup-node@v4
+      - uses: actions/setup-node@v7
         with:
           node-version: '20'
       - run: make deps init-spec doc-latest doc-version
