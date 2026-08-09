@@ -22,7 +22,7 @@ generate-oag-file-spec: clean-oag-file-spec
 
 test-oag-file-spec:
 	node_modules/.bin/plop oag-file-spec -- \
-	  --project_id "oagfilespec" \
+	  --project_id "oag-file-spec" \
 		--project_name "OAGFileSpec" \
 		--project_desc "A sample OpenAPI from file spec" \
 		--author_name "Pakkun" \
@@ -35,7 +35,7 @@ test-oag-file-spec:
 
 test-oag-file-spec-local:
 	node_modules/.bin/plop oag-file-spec -- \
-	  --project_id "oagfilespec" \
+	  --project_id "oag-file-spec" \
 		--project_name "OAGFileSpec" \
 		--project_desc "A sample OpenAPI from file spec" \
 		--author_name "Pakkun" \
@@ -58,7 +58,7 @@ generate-oag-file-spec-partials: clean-oag-file-spec-partials
 
 test-oag-file-spec-partials:
 	node_modules/.bin/plop oag-file-spec-partials -- \
-	  --project_id "oagfilespec" \
+	  --project_id "oag-file-spec" \
 		--project_name "OAGFileSpec" \
 		--project_desc "A sample OpenAPI from file spec" \
 		--author_name "Pakkun" \
@@ -80,7 +80,7 @@ generate-oag-url-spec: clean-oag-url-spec
 
 test-oag-url-spec:
 	node_modules/.bin/plop oag-url-spec -- \
-	  --project_id "oagurlspec" \
+	  --project_id "oag-url-spec" \
 		--project_name "OAGURLSpec" \
 		--project_desc "A sample OpenAPI from URL spec" \
 		--author_name "Pakkun" \
@@ -93,7 +93,7 @@ test-oag-url-spec:
 
 test-oag-url-spec-local:
 	node_modules/.bin/plop oag-url-spec -- \
-	  --project_id "oagurlspec" \
+	  --project_id "oag-url-spec" \
 		--project_name "OAGURLSpec" \
 		--project_desc "A sample OpenAPI from URL spec" \
 		--author_name "Pakkun" \
@@ -116,7 +116,7 @@ generate-oag-url-spec-partials: clean-oag-url-spec-partials
 
 test-oag-url-spec-partials:
 	node_modules/.bin/plop oag-url-spec-partials -- \
-	  --project_id "oagurlspec" \
+	  --project_id "oag-url-spec" \
 		--project_name "OAGURLSpec" \
 		--project_desc "A sample OpenAPI from URL spec" \
 		--author_name "Pakkun" \
