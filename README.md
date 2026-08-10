@@ -1,11 +1,14 @@
-<img align="right" src="https://raw.github.com/cliffano/generator-openapi-generator/main/avatar.jpg" alt="Avatar"/>
+<!-- BEGIN:AVATAR -->
+![Avatar](avatar.jpg)
+<!-- END:AVATAR -->
 
+<!-- BEGIN:BADGES -->
 [![Build Status](https://github.com/cliffano/generator-openapi-generator/workflows/CI/badge.svg)](https://github.com/cliffano/generator-openapi-generator/actions?query=workflow%3ACI)
 [![Code Scanning Status](https://github.com/cliffano/generator-openapi-generator/workflows/CodeQL/badge.svg)](https://github.com/cliffano/generator-openapi-generator/actions?query=workflow%3ACodeQL)
 [![Security Status](https://snyk.io/test/github/cliffano/generator-openapi-generator/badge.svg)](https://snyk.io/test/github/cliffano/generator-openapi-generator)
+<!-- END:BADGES -->
 
-Generator-OpenAPI-Generator
----------------------------
+# Generator-OpenAPI-Generator
 
 Generator-OpenAPI-Generator is an OpenAPI Generator projects generator using [Plop](https://plopjs.com/).
 
@@ -18,8 +21,7 @@ It provides the following components:
 
 All components are built using [Swaggy C](https://github.com/cliffano/swaggy-c).
 
-Usage
------
+## Usage
 
 Generate OAG with file specification project:
 
@@ -44,6 +46,7 @@ Both components will prompt you the following inputs:
 | Author Email | The email of the project author. |
 | Author URL | The author's website URL. |
 | GitHub ID | The GitHub ID of the project repo. |
+| GitHub Actions token prefix | Prefix for the GitHub token secret used in GitHub Actions workflows. |
 
 Move to the generated project directory:
 
@@ -103,8 +106,16 @@ For the primary languages, modify the configuration file to include the followin
 }
 ```
 
-Colophon
---------
+## Colophon
+
+<!-- BEGIN:DEVELOPERS_GUIDE -->
+[Developer's Guide](https://cliffano.github.io/developers-guide-makefile.html)
+<!-- END:DEVELOPERS_GUIDE -->
+
+<!-- BEGIN:BUILD_REPORTS -->
+Build reports:
+
+<!-- END:BUILD_REPORTS -->
 
 Related Projects:
 
