@@ -9,7 +9,12 @@ jobs:
     steps:
       - uses: actions/checkout@v7
         with:
-          ref: main
+          set-safe-directory: $\{{ github.workspace }}
+      - uses: iamsauravsharma/create-dotenv@v2.0.1
+        with:
+          file-path: '/tmp/.env'
+        env:
+          GITHUB_ACTIONS: $\{{ env.GITHUB_ACTIONS }}
       - uses: cliffano/command-docker-action@v2.1.0
         with:
           image: cliffano/studio:3.8.0
@@ -17,3 +22,4 @@ jobs:
           command: |
             make clean deps init-spec generate-primary build-javascript test-javascript &&
             make --environment-overrides publish-javascript
+          env_file: '/tmp/.env'
