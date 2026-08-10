@@ -1,1 +1,1 @@
-<img align="right" src="https://raw.github.com/{{github_id}}/{{project_id}}/main/avatar.jpg" alt="Avatar"/>
+![Avatar](avatar.jpg)
