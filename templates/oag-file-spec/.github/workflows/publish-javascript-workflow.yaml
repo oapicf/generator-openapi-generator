@@ -10,6 +10,10 @@ jobs:
       - uses: actions/checkout@v7
         with:
           ref: main
-      - uses: ./.github/actions/publish-javascript-action
-        env:
-          NPMJS_TOKEN: $\{{ secrets.NPMJS_TOKEN }}
+      - uses: cliffano/command-docker-action@v2.1.0
+        with:
+          image: cliffano/studio:3.8.0
+          shell: bash
+          command: |
+            make clean deps init-spec generate-primary build-javascript test-javascript &&
+            make --environment-overrides publish-javascript
