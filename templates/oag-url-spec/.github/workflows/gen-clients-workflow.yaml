@@ -24,5 +24,6 @@ jobs:
           env_file: '/tmp/.env'
       - uses: cliffano/save-changes-action@v2.0.0
         with:
+          github_token: $\{{ secrets.{{github_token_prefix}}_GITHUB_TOKEN }}
           message: 'Generate all API clients'
           push_changes: 'true'
