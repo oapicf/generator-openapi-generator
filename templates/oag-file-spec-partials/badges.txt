@@ -1,1 +1,1 @@
-[![Build Status](https://github.com/{{github_id}}/{{project_id}}/actions/workflows/ci-workflow.yaml/badge.svg)](https://github.com/{{github_id}}/{{project_id}}/actions/workflows/ci-workflow.yaml)
+[![Build Status](https://github.com/{{github_id}}/{{github_repo}}/actions/workflows/ci-workflow.yaml/badge.svg)](https://github.com/{{github_id}}/{{project_id}}/actions/workflows/ci-workflow.yaml)
