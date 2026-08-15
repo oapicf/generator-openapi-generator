@@ -4,7 +4,7 @@
 ################################################################
 
 # Swaggy C info
-SWAGGY_C_VERSION = 6.2.0
+SWAGGY_C_VERSION = 6.3.0
 
 # The version of OpenAPI Generator (https://openapi-generator.tech/) used for generating the API clients
 OPENAPI_GENERATOR_VERSION = 7.24.0
@@ -155,6 +155,7 @@ generate-all:
 		  --generator-name $$generator \
 		  --output /local/clients/$$generator/generated; \
 	done
+	$(call run_hook,x-post-generate-all)
 
 # Generate API clients for primary generators only
 # This target requires APP_BASE_DIR parameter to be supplied by user
@@ -170,14 +171,18 @@ generate-primary:
 		  --generator-name $$generator \
 		  --output /local/clients/$$generator/generated; \
 	done
+	$(call run_hook,x-post-generate-primary)
 
 ################################################################
 # API clients building targets for primary generators
 
+build-javascript: UPDATE_GENERATOR_INPUTS_GITHUB_ID = $(shell yq .generator.inputs.github_id $(UPDATE_MAKEFILE).yml)
+build-javascript: UPDATE_GENERATOR_INPUTS_GITHUB_REPO = $(shell yq .generator.inputs.github_repo $(UPDATE_MAKEFILE).yml)
 build-javascript:
 	$(call run_hook,x-pre-build-javascript)
 	npm install -g babel-cli
 	cd clients/javascript/generated/ && \
+	  yq -i '.repository.url = "https://github.com/$(UPDATE_GENERATOR_INPUTS_GITHUB_ID)/$(UPDATE_GENERATOR_INPUTS_GITHUB_REPO)"' package.json && \
 	  npm install && \
 	  npm link && \
 	  npm run build
@@ -210,14 +215,13 @@ test: test-javascript test-python test-ruby
 
 test-javascript: build-javascript
 	$(call run_hook,x-pre-test-javascript)
-	npm install -g mocha
 	npm install validator
 	cd clients/javascript/generated/ && \
 	  npm install --dev && \
 	  npm run test
 	cd test/javascript/ && \
 	  npm link ../../clients/javascript/generated/ && \
-	  mocha --timeout 5000 .
+	  ../../clients/javascript/generated/node_modules/.bin/mocha --timeout 5000 .
 
 test-python: build-python
 	cd clients/python/generated/ && \
