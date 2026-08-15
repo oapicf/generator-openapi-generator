@@ -6,7 +6,7 @@ To be populated by generator-openapi-generator oag-file-spec-partials
 To be populated by generator-openapi-generator oag-file-spec-partials
 <!-- END:BADGES -->
 
-[[![Build Status](https://github.com/{{github_id}}/{{project_id}}/actions/workflows/ci-workflow.yaml/badge.svg)](https://github.com/{{github_id}}/{{project_id}}/actions/workflows/ci-workflow.yaml)
+[[![Build Status](https://github.com/{{github_id}}/{{github_repo}}/actions/workflows/ci-workflow.yaml/badge.svg)](https://github.com/{{github_id}}/{{github_repo}}/actions/workflows/ci-workflow.yaml)
 <br/>
 
 {{project_name}}
