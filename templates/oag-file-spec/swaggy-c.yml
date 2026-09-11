@@ -9,5 +9,5 @@ scm:
   git_repo: {{project_id}}
 base_dir:
   github_actions: /home/runner/work/{{project_id}}/{{project_id}}/
-  local: /Users/cliffano/dev/workspace-oapicf/generator-openapi-generator/stage/{{project_id}}
+  local: $HOME/dev/workspace-oapicf/generator-openapi-generator/stage/{{project_id}}
   custom: /home/runner/work/generator-openapi-generator/generator-openapi-generator/stage/{{project_id}}/

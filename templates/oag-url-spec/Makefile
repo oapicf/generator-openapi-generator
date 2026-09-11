@@ -63,6 +63,10 @@ else
 	endif
 endif
 
+# Expand a literal $HOME placeholder (from swaggy-c.yml's base_dir.local) to the
+# current environment's actual home directory
+APP_BASE_DIR := $(subst $$HOME,$(HOME),$(APP_BASE_DIR))
+
 $(info ################################################################)
 $(info Building Swaggy C application with user configurations...)
 $(info - OpenAPI specification URI = ${SPEC_URI})
