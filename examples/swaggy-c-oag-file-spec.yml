@@ -1,0 +1,15 @@
+---
+package_name: oag-file-spec
+author: Pakkun
+generator:
+  component: oag-file-spec
+  inputs:
+    project_id: oag-file-spec
+    project_name: OAGFileSpec
+    project_desc: A sample OpenAPI from file spec
+    author_name: Pakkun
+    author_email: pakkunbot@users.noreply.github.com
+    author_url: https://github.com/pakkunbot
+    github_id: pakkunbot
+    github_repo: oag-file-spec
+    github_token_prefix: OAPICF

@@ -1,0 +1,15 @@
+---
+package_name: oag-url-spec
+author: Pakkun
+generator:
+  component: oag-url-spec-partials
+  inputs:
+    project_id: oag-url-spec
+    project_name: OAGURLSpec
+    project_desc: A sample OpenAPI from URL spec
+    author_name: Pakkun
+    author_email: pakkunbot@users.noreply.github.com
+    author_url: https://github.com/pakkunbot
+    github_id: pakkunbot
+    github_repo: oag-url-spec
+    github_token_prefix: OAPICF

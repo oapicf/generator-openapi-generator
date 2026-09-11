@@ -54,6 +54,19 @@ Move to the generated project directory:
 cd stage/<component>/
 ```
 
+## Usage With Config File
+
+Each component also has a `-with-config` target that skips the interactive prompts by reading the inputs from a Swaggy C YAML config file. See [examples/](examples/) for sample config files for each component.
+
+Pass the config file path via the `GENERATOR_CONFIG` variable, it defaults to `swaggy-c.yml`:
+
+```shell
+make generate-oag-file-spec-with-config GENERATOR_CONFIG=path/to/swaggy-c.yml
+make generate-oag-file-spec-partials-with-config GENERATOR_CONFIG=path/to/swaggy-c.yml
+make generate-oag-url-spec-with-config GENERATOR_CONFIG=path/to/swaggy-c.yml
+make generate-oag-url-spec-partials-with-config GENERATOR_CONFIG=path/to/swaggy-c.yml
+```
+
 Initial configuration file for each OAG language:
 
 ```shell
