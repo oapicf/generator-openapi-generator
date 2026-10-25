@@ -7,6 +7,6 @@
     "plop": "4.0.5"
   },
   "dependencies": {
-    "validator": "^13.15.26"
+    "validator": "^13.15.35"
   }
 }
