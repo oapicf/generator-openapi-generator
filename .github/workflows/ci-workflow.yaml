@@ -10,4 +10,3 @@ jobs:
         with:
           command: 'make ci'
           image: cliffano/studio:4.0.0
-          shell: bash
