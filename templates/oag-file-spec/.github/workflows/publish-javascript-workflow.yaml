@@ -25,3 +25,4 @@ jobs:
             make clean deps init-spec generate-primary build-javascript test-javascript &&
             make --environment-overrides publish-javascript
           env_file: '/tmp/.env'
+          extra_args: '--env ACTIONS_ID_TOKEN_REQUEST_URL --env ACTIONS_ID_TOKEN_REQUEST_TOKEN --env RUNNER_ENVIRONMENT'
