@@ -16,11 +16,11 @@ jobs:
         with:
           command: 'make deps-upgrade'
           image: cliffano/studio:4.0.0
-      - uses: iamsauravsharma/create-dotenv@v2.0.1
+      - uses: iamsauravsharma/create-dotenv@v4.0.0
         with:
+          input-prefix: 'GITHUB_'
+          output-prefix: 'GITHUB_'
           file-path: '/tmp/.env'
-        env:
-          GITHUB_ACTIONS: $\{{ env.GITHUB_ACTIONS }}
       - uses: cliffano/command-docker-action@v2.1.0
         with:
           command: 'make ci'
