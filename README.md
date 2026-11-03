@@ -10,7 +10,7 @@
 
 # Generator-OpenAPI-Generator
 
-Generator-OpenAPI-Generator is an OpenAPI Generator projects generator using [Plop](https://plopjs.com/).
+Generator-OpenAPI-Generator is a code generator for OpenAPI Generator projects.
 
 It provides the following components:
 
